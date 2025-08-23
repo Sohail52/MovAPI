@@ -131,33 +131,7 @@ Create a production JAR:
 ./gradlew bootJar
 ```
 
-The JAR file will be created in `build/libs/` directory.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the amazing framework
-- The Java community for continuous improvements
-- All contributors who helped with this project
-
-## 📞 Support
 
 If you have any questions or need help, please open an issue on GitHub or contact me directly.
 
