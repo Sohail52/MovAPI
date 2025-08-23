@@ -136,5 +136,3 @@ Create a production JAR:
 If you have any questions or need help, please open an issue on GitHub or contact me directly.
 
 ---
-
-⭐ **Star this repository if you found it helpful!**
