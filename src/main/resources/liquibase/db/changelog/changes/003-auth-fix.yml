@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-auth-fix
+      author: ai
+      changes:
+        - dropUniqueConstraint:
+            tableName: authorities
+            constraintName: authorities_name_key
+        - addUniqueConstraint:
+            tableName: authorities
+            columnNames: user_id, name
+            constraintName: uq_authorities_user_name
+
+

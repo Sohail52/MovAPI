@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004-relax-movie-runtime
+      author: ai
+      changes:
+        - addDefaultValue:
+            tableName: movie
+            columnName: runtime
+            defaultValueNumeric: 120
+
+

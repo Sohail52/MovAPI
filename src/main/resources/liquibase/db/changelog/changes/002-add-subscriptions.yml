@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-add-subscriptions
+      author: ai
+      changes:
+        - createTable:
+            tableName: subscriptions
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: email
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: genre_name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: person_tmdb_id
+                  type: INTEGER
+                  constraints:
+                    nullable: true
+
+

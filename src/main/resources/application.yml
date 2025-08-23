@@ -1,0 +1,49 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:postgres}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:admin123}
+
+  liquibase:
+    change-log: classpath:/liquibase/changelog-master.yml
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000 #1 hour in milliseconds
+
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: ${OUTLOOK_USERNAME:}
+    password: ${OUTLOOK_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+tmdb:
+  url: https://api.themoviedb.org/3
+  api-key: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMzVmYWNmZWFmZmJkNmQ1ZTdiNjkwYmU4ZGJjZmE1MCIsIm5iZiI6MTc1NTQ5Nzk1Mi4wMDcsInN1YiI6IjY4YTJjNWRmOTZhZGJmYWU1NTYzMjllNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nl4vcqQGw3KiU-3rAgIccCof_FNxpc4jMEZShWWEPIQ
+  default-language: en-US
+
+application:
+  security:
+    jwt:
+      secret-key: ZDM1ZmFjZmVhZmZiZDZkNWU3YjY5MGJlOGRiY2ZhNTA=
+      expiration: 86400000 #for 1 day
