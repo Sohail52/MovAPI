@@ -20,7 +20,7 @@ A comprehensive Spring Boot-based Movie API with user authentication, movie mana
 - **Security**: Spring Security, JWT
 - **Validation**: Jakarta Validation
 - **Documentation**: OpenAPI/Swagger
-- **Testing**: JUnit 5, Mockito
+
 
 ## 📋 Prerequisites
 
