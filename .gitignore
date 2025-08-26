@@ -98,7 +98,7 @@ src/main/resources/application-local.properties
 .env.test.local
 .env.production.local
 
-# Node modules (if you have frontend)
+# Node modules 
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -171,7 +171,7 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
