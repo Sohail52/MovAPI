@@ -21,44 +21,6 @@ A comprehensive Spring Boot-based Movie API with user authentication, movie mana
 - **Database**: JPA/Hibernate
 - **Security**: Spring Security, JWT
 - **Validation**: Jakarta Validation
-- **Documentation**: OpenAPI/Swagger
-
-
-## 📋 Prerequisites
-
-- Java 17 or higher
-- Gradle 7.x or higher
-- MySQL 8.0+ or PostgreSQL 12+
-- IDE (IntelliJ IDEA, Eclipse, or VS Code)
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/movie-api.git
-cd movie-api
-```
-
-### 2. Configure Database
-Update `src/main/resources/application.properties` with your database credentials:
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/movie_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-```
-
-### 3. Build the Project
-```bash
-./gradlew build
-```
-
-### 4. Run the Application
-```bash
-./gradlew bootRun
-```
-
-The API will be available at: `http://localhost:8080`
 
 ## 📚 API Endpoints
 
@@ -119,18 +81,6 @@ The application uses JWT-based authentication with the following security featur
 - `movie_id` - Foreign key to movies table
 - `added_at` - Addition timestamp
 
-## 🧪 Testing
-
-Run the test suite:
-```bash
-./gradlew test
-```
-
-## 📦 Building for Production
-
-Create a production JAR:
-```bash
-./gradlew bootJar
 ```
 
 
