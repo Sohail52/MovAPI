@@ -1,6 +1,6 @@
-This project is still under active development. 
+under development. 
 
-# Movie API Development Project
+# Movie API 
 
 A comprehensive Spring Boot-based Movie API with user authentication, movie management, and watchlist functionality.
 
